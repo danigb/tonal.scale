@@ -33,18 +33,6 @@ major('C') // => ['C', 'D', 'E', 'F', 'G', 'A', 'B']
 Returns `Object` a data object with the scale properties
 
 
-## `scale`
-
-In music.kit an scale is a set of notes or intervals with a tonic and ordered
-by pitch
-
-The `scale` module has functions to create and manipulate scales
-
-
-
-
-
-
 ## `scale.chord`
 
 Get the (triad) chord name of a scale
