@@ -1,11 +1,11 @@
 {
-  "name": "tonal.scale",
+  "name": "tonal.scale-tools",
   "version": "0.0.0",
   "private": "true",
   "description": "Music scales made easy",
   "main": "lib/index.js",
   "scripts": {
-    "build": "npm run docs && npm run dist && npm run disc && npm run coverage",
+    "build": "cp README.md lib/ && npm run docs && npm run dist && npm run disc && npm run coverage",
     "test": "vows --spec test/*.js",
     "docs": "documentation -f md > API.md",
     "dist": "browserify lib/index.js | uglifyjs > dist/tonal.scale.min.js&& ls -hall dist/",

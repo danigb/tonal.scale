@@ -1,5 +1,40 @@
 ## `scale`
 
+Get a scale by name using a dictionary.
+
+You can get scale notes by passing a tonic or the scale intervals by passing
+`false` as tonic
+
+There is two ways to get a scale:
+
+- With tonic included in name: `scale('C major')`
+- With name and tonic: `scale('major', 'C')`
+
+This function can be partially applied (see examples)
+
+### Parameters
+
+* `name` **`String`** the scale name (optionally can include the tonic)
+
+
+### Examples
+
+```js
+var scale = require('music.scale')
+// with name and tonic
+scale('major', 'C') // => ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+// with tonic inside the name
+scale('C major') // => ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+// partially applied
+var major = scale('major')
+major('C') // => ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+```
+
+Returns `Object` a data object with the scale properties
+
+
+## `scale`
+
 In music.kit an scale is a set of notes or intervals with a tonic and ordered
 by pitch
 
@@ -41,40 +76,6 @@ var scales = require('music.kit/scale/dictionary')
 scales['major'] // => { name: 'major', intervals: ['1', '2', ...], aliases: [] }
 ```
 
-
-
-## `scale.get`
-
-Get a scale by name using a dictionary.
-
-You can get scale notes by passing a tonic or the scale intervals by passing
-`false` as tonic
-
-There is two ways to get a scale:
-- With name and tonic: `scale.get('major', 'C')`
-- With tonic included in name: `scale.get('C major')`
-
-This function can be partially applied (see examples)
-
-### Parameters
-
-* `name` **`String`** the scale name (optionally can include the tonic)
-
-
-### Examples
-
-```js
-var get = require('music.kit/scale/get')
-// with name and tonic
-get('major', 'C') // => ['C', 'D', 'E', 'F', 'G', 'A', 'B']
-// with tonic inside the name
-get('C major') // => ['C', 'D', 'E', 'F', 'G', 'A', 'B']
-// partially applied
-var major = get('major')
-major('C') // => ['C', 'D', 'E', 'F', 'G', 'A', 'B']
-```
-
-Returns `Object` a data object with the scale properties
 
 
 ## `scale.modes`
