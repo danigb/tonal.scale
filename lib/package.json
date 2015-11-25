@@ -1,7 +1,6 @@
 {
   "name": "tonal.scale",
-  "version": "0.0.1",
-  "private": "true",
+  "version": "0.0.2",
   "description": "Music scales made easy",
   "main": "index.js",
   "scripts": {
@@ -28,10 +27,9 @@
     "vows": "^0.8.x"
   },
   "dependencies": {
-    "tonal.chord": "file:../../chord/lib",
-    "tonal.dictionary": "file:../../dictionary/lib",
-    "tonal.gamut": "file:../../gamut/lib",
-    "tonal.set": "file:../../set/lib",
-    "tonal.transpose": "file:../../transpose"
+    "tonal.chord": "0.0.x",
+    "tonal.dictionary": "0.0.x",
+    "tonal.gamut": "0.0.x",
+    "tonal.transpose": "0.0.x"
   }
 }

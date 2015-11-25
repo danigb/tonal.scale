@@ -13,11 +13,11 @@ Music scales made easy:
 var scale = require('tonal.scale')
 scale('C dorian') // => ['C', 'D', 'Eb', 'F', 'G', 'A', 'Bb']
 ```
-`music.scale` is a collection of functions to create and manipulate scales, and a [scale dictionary](). This is part of [tonal](https://www.npmjs.com/package/tonal)
+`music.scale` is a [compact](https://rawgit.com/danigb/tonal.scale/master/dist/disc.html) library to create and manipulate scales, and a [scale dictionary](). It is part of [tonal](https://www.npmjs.com/package/tonal)
 
 ## Install
 
-Only via npm: `npm i --save tonal.scale`
+Via npm: `npm i --save tonal.scale` or add the [distribution file](https://raw.githubusercontent.com/danigb/tonal.scale/master/dist/tonal.scale.min.js) to your html page (will set `scale` global variable with the library)
 
 ## Usage
 
